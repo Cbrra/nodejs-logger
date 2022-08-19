@@ -1,6 +1,9 @@
 # nodejs-logger
 Custom Node.js logger
 
+### Dependencies
+You need chalk@4.1.2 and moment
+
 ### How to use
 ```js
 const { Logger } = require("pathToTheLogger/index");
