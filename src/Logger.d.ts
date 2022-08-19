@@ -23,7 +23,7 @@ interface IOptions {
 
 declare class Logger {
     public constructor(options: IOptions);
-    public readonly options: IOptions;
+    public readonly options: Required<IOptions>;
     public readonly stream: NodeJS.WriteStream;
     public readonly cache: { all: ILog[] } & {
         [key in CacheKey]: {
