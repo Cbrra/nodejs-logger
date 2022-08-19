@@ -96,7 +96,7 @@ class Logger {
         cache.All.push(data);
         cache[type].push(data);
 
-        if(this.cache.all.length > this.options.maxMainCacheLength) this.cache.all = this.cache.logged.all.slice(this.options.mainCacheSliceWidth);
+        if(this.cache.all.length > this.options.maxMainCacheLength) this.cache.all = this.cache.all.slice(this.options.mainCacheSliceWidth);
         if(cache.All.length > this.options.maxMainCacheLength) cache.All = cache.All.slice(this.options.mainCacheSliceWidth);
         if(cache[type].length > this.options.maxCacheLength) cache[type] = cache[type].slice(this.options.cacheSliceWidth);
     };
